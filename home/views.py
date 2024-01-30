@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from datetime import datetime
-base_path = 'home/'
+
 # Create your views here.
 def index(request):
     year  = datetime.today().year
@@ -15,6 +15,7 @@ def index(request):
     return render(request,'home/index.html',context)
 
 def items(request,item):
+    base_path = 'home/'
     if item == 'news':
         templates_path = base_path+'news.html'
     elif item == 'dex':
@@ -27,6 +28,5 @@ def items(request,item):
         templates_path = base_path+'bi.html'
     elif item == 'create_account':
         templates_path = base_path+'create_account.html'
-        
-    
+
     return render(request,templates_path)
