@@ -1,36 +1,49 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href={% static 'home/css/styles.css' %}>
-    <title>HOME</title>
-
+    <title>Layout</title>
 </head>
-
 <body>
-    git master test
-    <div class="inline">Dex Consulting</div>
-    {% block header-date %}
-    {% endblock header-date %}
-    <ul>
-        <li><a href="https://www.dexconsulting.net/" target="_blank">회사소개</a></li>
-        <li><a href="news/">뉴스</a></li>
-        <li><a href="rpa_docs/">RPA란?</a></li>
-        <li><a href="apps_docs/">Apps란?</a></li>
-        <li><a href="bi_docs/">BI란?</a></li>
-        <li><a href="create_account/">회원가입</a></li>
-    </ul>
-    <!-- bootstrap Script Area -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <!-- header -->
+    <div id="header" class="layout">
+        <div class="layout">
+            <a href="/">Dex Consulting</a>
+        </div>
+        <div class="layout">
+            <a href="/">회원가입</a>
+        </div>
+    </div>
+    <!-- top-ui -->
+    <div id="top-ui" class="layout">
+
+    </div>
+
+    <!-- body -->
+    <div id="container">
+        <div id="wrap">
+            <div class="layout" id="layout-left">
+                <ul>
+                    <li><a href="/"><span>회사소개</span></a></li>
+                    <li><a href="/"><span>Apps</span></a></li>
+                    <li><a href="/"><span>BI</span></a></li>
+                    <li><a href="/"><span>PAD</span></a></li>
+                    <li><a href="/"><span>PA</span></a></li>
+                </ul>
+            </div>
+            <div class="layout" id="layout-right">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="layout">
+
+    </div>
 </body>
 </html>

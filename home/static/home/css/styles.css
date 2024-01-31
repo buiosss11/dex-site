@@ -1,5 +1,80 @@
-/* Tag Style */
+/* All */
+body {
+    padding-inline: 10px;
+    margin: 0px;
+}
+a{
+    text-decoration-line: none;
+    text-align: center;
+    color: #000000;
+}
 
-/* Class Style */
 
-/* Id Style */
+/* id class css */
+#header {
+    width: 100%;
+    height: 25px;
+    background-color: aqua;
+    justify-content: space-between;
+    display: flex;
+}
+#header div{
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-right: 12px;
+    font-size: 12px;
+}
+
+#top-ui{
+    width: 100%;
+    height: 30px;
+    background-color: orange;
+}
+#layout-left {
+    width: 10%;
+    height: 400px;
+    background-color: blue;
+}
+#layout-left ul{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#layout-left li{
+    margin-top: 5px;
+}
+#layout-left li a{
+    font-size: 11px;
+}
+#layout-right {
+    width: 90%;
+    height: 400px;
+    background-color: brown;
+}
+#footer {
+    width: 100%;
+    height: 15px;
+    background-color: yellow;
+}
+
+
+
+
+.layout {
+    float: left;
+}
+
+@media (max-width:480px){
+    a{
+        font-size: 10px;
+    }
+    li {
+        font-size: 10px;
+    }
+}
+/* @media (min-width:960px){
+    a{
+        font-size: 5px;
+    }
+} */
