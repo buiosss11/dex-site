@@ -1,7 +1,14 @@
-
-body {
-    background-color: #e0e0e0;
+div{
+    background-color: red;
 }
-div {
-    border: #000000 solid 1px;
+
+#left_container {
+    width: 20%;
+    height: 520px;
+    background-color: aqua;
+}
+#right_container {
+    width: 20%;
+    height: 520px;
+    background-color: brown;
 }
